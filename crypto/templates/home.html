@@ -49,7 +49,7 @@
 				  <img class="card-img-top" src="{{ x.imageurl }}" alt="{{ x.source }}">
 				  <div class="card-body">
 				    <h5 class="card-title">{{ x.title }}</h5>
-				    <p class="card-text">{{ x.body }}</p>
+				    <p class="card-text">{{ x.body|slice:"200" }}</p>
 				    <a href="{{ x.url }}" class="btn btn-primary">Read More...</a>
 				  </div>
 				</div>
@@ -62,7 +62,5 @@
 	
 	
 
-	{{api.Data}}
-
-
+	
 {% endblock %}
